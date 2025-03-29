@@ -26,36 +26,48 @@ Generate a complete `data.yaml` file visually:
 - Choose list or dict format for classes
 - Save as `data.yaml` with one click
 
+### 4. YOLO Label Inspector ✅ NEW
+A GUI-based tool to visually inspect and edit YOLO labels:
+- Draw and delete bounding boxes with your mouse
+- Custom class shortcuts and colors
+- Auto-loads classes from existing `.txt` files
+- Progress tracker (e.g., `127/1000 12.7%`)
+- Save corrected labels to a separate folder
+
+> ⚙ Shortcut Keys:
+> - `z`: Delete box mode  
+> - `x`: Save & next  
+> - `ESC`: Exit  
+> - Number/letter keys: Add box for selected class
+
 ---
 
-## 🔽 Download YOLO Auto Labeling Tool (.exe)
+## 🔽 Download Tools (.exe)
 
-[Click here to download YOLO Auto Labeling Tool (2.7GB)](https://drive.google.com/file/d/1_GdyNwUooAU0tYSeOKy8jhlEPEgCxA1x/view?usp=sharing)
+### 🔹 YOLO Auto Labeling Tool (2.6GB)
 
-⚠ No installation required. Just run the `.exe` file.
+[📦 Click to download](https://drive.google.com/file/d/1_GdyNwUooAU0tYSeOKy8jhlEPEgCxA1x/view?usp=sharing)
 
-ℹ️ Note: This is a standalone executable. You do not need to install Python or any dependencies.
+---
+
+### 🔹 YOLO Label Inspector (58.9MB)
+
+[📦 Click to download](https://drive.google.com/file/d/152hvz7TOl_g0P9hUIWoUdrQr3LMN4z2C/view?usp=drive_link)
+
+⚠ No installation required. Just run the `.exe` file.  
+ℹ️ Python and dependencies are **not required**.
 
 ---
 
 ## 📦 How to Use
 
-1. Download the `.exe` file from the link above
+1. Download the `.exe` file(s) from the links above
 2. Run the tool (no installation required)
-3. Follow the GUI instructions to label, convert, or generate data
+3. Follow the GUI instructions to label, convert, inspect, or generate data
 
 ---
 
 ## 🛠 Requirements (for .py files)
 
 ```bash
-pip install -r requirements.txt
-```
-
----
-
-## ☕ Support the Project
-
-If this tool saved you time and effort, please consider supporting me here:
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-yellow?logo=buymeacoffee)](https://www.buymeacoffee.com/ctpjszzangf)
+pip install tk torch ultralytics pyyaml
